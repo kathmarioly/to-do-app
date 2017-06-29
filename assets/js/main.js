@@ -10,3 +10,14 @@ $(document).ready(function(){
 			}
 	});
 });
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").remove(".correr");
+    });
+});
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").remove(".cocinar");
+    });
+});

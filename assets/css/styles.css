@@ -11,7 +11,7 @@ body{
 }
 header, section{
 	padding: 4% 0;
-	background-color: rgba(187, 212, 208, 0.8);
+	background-color: rgba(0, 96, 128, 0.7);
 }
 button{
 	background-color: rgb(150, 208, 212);
@@ -24,10 +24,3 @@ span{
 	display: block;
 }
 
-#mensaje {
-	background-color: whitesmoke;
-	color: black;
-}
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: pink;
-}
