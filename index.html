@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>TO Do App</title>
+	
+	<!--materialize CSS-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+	<header class="container">
+		<div class="row">
+			<div class="col offset-s2 s8">
+				<h1>To Do App</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col offset-s2 s8">
+				<form action="">
+					<label></label>
+					<select disabled>
+						<option value="" disabled selected>Ingresa tu tarea</option>
+						<option value="1">Option 1</option>
+						<option value="2">Option 2</option>
+						<option value="3">Option 3</option>
+					</select>
+
+					<label>Browser Disabled</label>
+					<select class="browser-default" disabled>
+						<option value="" disabled selected>Choose your option</option>
+						<option value="1">Option 1</option>
+						<option value="2">Option 2</option>
+						<option value="3">Option 3</option>
+					</select>
+
+					<input type="text" id="nombre">
+					<label>Mensaje</label>
+					<textarea id="mensaje"></textarea>
+					<button>Enviar</button>
+				</form>
+			</div>
+		</div>
+	</header>
+	<section class="container">
+		<div class="col offset-s3 s6">
+			<div id="comentarios">
+				
+			</div>
+		</div>
+	</section>
+
+	<!--JQUERY-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--MATERIALIZE-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>	
+
+
+</body>
+</html>
