@@ -23,3 +23,19 @@ label, span, p{
 span{
 	display: block;
 }
+ li {
+    padding: 5px 0;
+  }
+}
+.rmvBtn {
+  float: right;
+}
+.done {
+  text-decoration: line-through;
+}
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: relative;
+    left: 0;
+    opacity: 1;
+}
