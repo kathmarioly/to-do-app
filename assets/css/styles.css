@@ -23,3 +23,11 @@ label, span, p{
 span{
 	display: block;
 }
+
+#mensaje {
+	background-color: whitesmoke;
+	color: black;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: pink;
+}
