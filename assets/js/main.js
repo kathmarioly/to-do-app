@@ -1,23 +1,30 @@
-$(document).ready(function(){
-	$("button").click(function(e){
-		e.preventDefault();
-		var name = $("#nombre").val();
-		var message = $("#mensaje").val();
-		if(message == ""){
-			alert("Debes escribir tu nombre y el mensaje");
-			}else{
-			$('#comentarios').append('<div</span><p class="center-align">'+message+'</p></div>');
-			}
-	});
-});
+var $input = $('input'),
+	  $btn = $('#addBtn'),
+	  $ul = $('#myList'),
+	  $rmvBtn = $('.rmvBtn');
 
-$(document).ready(function(){
-    $("button").click(function(){
-        $("p").remove(".correr");
-    });
-});
-$(document).ready(function(){
-    $("button").click(function(){
-        $("p").remove(".cocinar");
-    });
-});
+	$btn.on('click', function(e) {
+	  e.preventDefault();
+	  if ($input.val() == '') {
+	    alert('Add new task please..');
+	  } else {
+	    $ul.prepend('<li><input type="checkbox" class="check"> ' + $input.val() + ' <button class="rmvBtn">x</button></li>');
+	    $input.val('');
+	  }
+	});
+
+	function removeItem() {
+	  $(this).closest('li').remove();
+	}
+
+	function markThis() {
+	  if (this.checked) {
+	    $(this).closest('li').addClass('done');
+	  } else {
+	    $(this).closest('li').removeClass('done');
+	  }
+	}
+
+	$(document).on('click', '.check', markThis);
+
+	$(document).on('click', '.rmvBtn', removeItem);

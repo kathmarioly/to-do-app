@@ -18,27 +18,17 @@
 		</div>
 		<div class="row">
 			<div class="col offset-s2 s8">
-				<form action="">
-					<label></label>
-					<textarea id="mensaje"></textarea>
-					<button>Agregar</button>
-					<h6>To do Items:</h6>
-					<p class="correr">
-						<input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-						<label for="filled-in-box">Salir a correr</label>
-						<button class="correr">Remove</button>
-					</p>
-					<p class="cocinar">
-						<input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-						<label for="filled-in-box">Cocinar</label>
-						<button class="cocinar">Remove</button>
-					</p>
-					<p class="codear">
-						<input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-						<label for="filled-in-box">Codear</label>
-						<button class="codear">Remove</button>
-					</p>
-				</form>
+				 <form action="#">
+        <input type="text" placeholder="Add new task">
+        <button id="addBtn">Add</button>
+      </form>
+      <ul id="myList">
+        <li><input type="checkbox" class="check"> first task <button class="rmvBtn">x</button></li>
+        <li class="done"><input type="checkbox" class="check" checked> second task <button class="rmvBtn">x</button></li>
+        <li><input type="checkbox" class="check"> third task <button class="rmvBtn">x</button></li>
+      </ul>
+
+    </div>
 			</div>
 		</div>
 		<hr>
@@ -66,4 +56,4 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!--MATERIALIZE-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-	<script type="text/javascript" src="assets/js/main.js"></script>	
+	<script type="text/javascript" src="assets/js/main.js"></script>
